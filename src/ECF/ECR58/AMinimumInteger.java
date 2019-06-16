@@ -1,4 +1,4 @@
-package ECR58;
+package ECF.ECR58;
 
 import java.util.Scanner;
 import java.io.PrintWriter;

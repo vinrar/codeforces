@@ -1,4 +1,4 @@
-package ECR66DIV2;
+package ECF.ECR66DIV2;
 
 import java.util.Scanner;
 import java.io.PrintWriter;

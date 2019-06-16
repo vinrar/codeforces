@@ -1,10 +1,10 @@
-package ECR58;
+package ECF.ECR58;
 
 import java.util.Scanner;
-import java.io.PrintWriter;
 
-public class AHitTheLottery {
-    public void solve(int testNumber, Scanner in, PrintWriter out) {
+public class Lottery {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         int n = in.nextInt();
 
         int sum = 0;
@@ -19,6 +19,6 @@ public class AHitTheLottery {
         n = n%5;
         sum += n;
 
-        out.println(sum);
+        System.out.println(sum);
     }
 }

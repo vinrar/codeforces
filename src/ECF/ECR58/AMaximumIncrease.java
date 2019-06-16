@@ -1,9 +1,9 @@
-package ECR58;
+package ECF.ECR58;
 
 import java.util.Scanner;
 import java.io.PrintWriter;
 
-public class AKefaAndFirstSteps {
+public class AMaximumIncrease {
     public void solve(int testNumber, Scanner in, PrintWriter out) {
         int n = in.nextInt();
         int[] list = new int[n];
@@ -15,7 +15,7 @@ public class AKefaAndFirstSteps {
         int localCount = 1;
         for(int i = 1; i < n; i++){
 
-            if(list[i] >= list[i-1]){
+            if(list[i] > list[i-1]){
                 ++localCount;
                 if(max < localCount)
                     max = localCount;

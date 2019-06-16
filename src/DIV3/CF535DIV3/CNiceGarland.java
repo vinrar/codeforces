@@ -1,4 +1,4 @@
-package CF535DIV3;
+package DIV3.CF535DIV3;
 
 import java.util.*;
 import java.io.PrintWriter;

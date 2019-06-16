@@ -1,4 +1,4 @@
-package CF530DIV2;
+package DIV2.CF530DIV2;
 
 import java.util.*;
 import java.io.PrintWriter;

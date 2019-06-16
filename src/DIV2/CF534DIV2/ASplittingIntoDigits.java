@@ -1,4 +1,4 @@
-package CF534DIV2;
+package DIV2.CF534DIV2;
 
 import java.util.Scanner;
 import java.io.PrintWriter;
