@@ -1,0 +1,39 @@
+{
+  "name" : "C - Mixing Water",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n30 10 20\n41 15 30\n18 13 18\n10 4 9\n",
+    "output" : "2\n7\n1\n1\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n999954 44 500000\n999971 22 499997\n999988 1 499995\n999962 9 499986\n999981 43 500013\n1000000 31 500016\n999975 2 499989\n999960 14 499988\n999998 3 500001\n999954 49 500002\n999963 1 499983\n999972 34 500004\n999992 10 500002\n999977 17 499998\n999964 40 500003\n999999 38 500019\n999965 11 499989\n999962 20 499992\n999975 32 500004\n999954 15 499985\n1000000 12 500007\n999963 35 500000\n999970 12 499992\n999979 34 500007\n999999 7 500004\n999988 31 500010\n999979 27 500004\n999963 28 499996",
+    "output" : "499955\n999949\n999987\n999953\n499969\n999969\n999973\n499973\n999995\n999905\n499981\n499969\n499991\n499981\n499963\n999961\n499977\n499971\n999943\n999939\n499995\n499965\n499979\n999945\n499997\n999957\n499977\n999935",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/ECF/ECR88",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "ECF.ECR88.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.06.02",
+  "contestName" : "Educational Codeforces Round 88 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

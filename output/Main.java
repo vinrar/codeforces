@@ -2,7 +2,6 @@ import java.io.OutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -17,66 +16,37 @@ public class Main {
         OutputStream outputStream = System.out;
         Scanner in = new Scanner(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        BDivisorsOfTwoIntegers solver = new BDivisorsOfTwoIntegers();
+        TaskD solver = new TaskD();
         solver.solve(1, in, out);
         out.close();
     }
 
-    static class BDivisorsOfTwoIntegers {
+    static class TaskD {
         public void solve(int testNumber, Scanner in, PrintWriter out) {
-//        int n = in.nextInt();
-//
-//        List<Integer> arr = new ArrayList<Integer>();
-//        int secondMax = 1;
-//        for (int i = 0; i < n; i++) {
-//            arr.add(in.nextInt());
-//        }
-//
-//        Collections.sort(arr);
-//        int max = arr.get(n - 1);
-//
-//        for (int i = n - 2; i >= 0; i--) {
-////            out.println("i: " + i + " arr[i]:" + arr.get(i) + "arr[i+1]:" +arr.get(i+1));
-////            out.println(arr.get(i) == arr.get(i+1));
-//            if (max % arr.get(i) != 0) {
-//                secondMax = arr.get(i);
-//                break;
-//            } else if (arr.get(i).equals(arr.get(i + 1))) {
-//                secondMax = arr.get(i);
-//                break;
-//            }
-//        }
-//
-//        out.println(max + " " + secondMax);
-
             int n = in.nextInt();
-            int arr[] = new int[n];
+            int[] arr = new int[n];
             for (int i = 0; i < n; i++) {
                 arr[i] = in.nextInt();
             }
-            Arrays.sort(arr);
-            boolean vis[] = new boolean[n];
-            int i = 0, j = n - 1;
-            for (int k = 1; k <= (int) Math.sqrt(arr[n - 1]); k++) {
-                if (arr[n - 1] % k == 0) {
-                    while (arr[i] != k) {
-                        i++;
+            int finalSum = Integer.MIN_VALUE;
+
+            for (int i = 0; i < n; i++) {
+                int maxSoFar = Integer.MIN_VALUE;
+                int sum = 0;
+                for (int j = i; j < n; j++) {
+                    if (maxSoFar < arr[j]) {
+                        maxSoFar = arr[j];
                     }
-                    vis[i] = true;
-                    if (k != (arr[n - 1] / k)) {
-                        while (arr[j] != (arr[n - 1] / k)) {
-                            j--;
-                        }
-                        vis[j] = true;
+                    sum += arr[j];
+
+                    int localSum = sum - maxSoFar;
+                    if (localSum > finalSum) {
+                        finalSum = localSum;
                     }
                 }
+
             }
-            for (int k = n - 1; k >= 0; k--) {
-                if (!vis[k]) {
-                    out.println(arr[n - 1] + " " + arr[k]);
-                    break;
-                }
-            }
+            out.println(finalSum);
         }
 
     }

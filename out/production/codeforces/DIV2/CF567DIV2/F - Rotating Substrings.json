@@ -1,0 +1,34 @@
+{
+  "name" : "F - Rotating Substrings",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n1\na\na\n2\nab\nba\n3\nabc\ncab\n3\nabc\ncba\n4\nabab\nbaba\n4\nabcc\naabc\n",
+    "output" : "0\n1\n1\n2\n1\n-1\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/DIV2/CF567DIV2",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "DIV2.CF567DIV2.TaskF",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.06.02",
+  "contestName" : "Codeforces Round #646 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

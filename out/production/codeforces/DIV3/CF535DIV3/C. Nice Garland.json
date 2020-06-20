@@ -1,0 +1,54 @@
+{
+  "name" : "C. Nice Garland",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\nBRB\n",
+    "output" : "1\nBRG\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "7\nRGBGRBB\n",
+    "output" : "3\nRGBRGBR\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\nRG\n",
+    "output" : "0\nRG\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\nR\n",
+    "output" : "0\nR\n",
+    "index" : 3,
+    "active" : true
+  } , {
+    "input" : "7\nGRBGRBG\n",
+    "output" : "0\nGRBGRBG\n",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "src/CF535DIV3",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "CF535DIV3.CNiceGarland",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.23",
+  "contestName" : "Codeforces Round #535 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
