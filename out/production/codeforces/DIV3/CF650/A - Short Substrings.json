@@ -1,0 +1,34 @@
+{
+  "name" : "A - Short Substrings",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\nabbaac\nac\nbccddaaf\nzzzzzzzzzz\n",
+    "output" : "abac\nac\nbcdaf\nzzzzzz\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/DIV3/CF650",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "DIV3.CF650.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2020.06.20",
+  "contestName" : "Codeforces Round #650 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "java.util.Scanner",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
